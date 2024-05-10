@@ -1,0 +1,1 @@
+// model for high scores
