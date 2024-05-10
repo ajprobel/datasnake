@@ -1,0 +1,22 @@
+{
+  "name": "group4-project2",
+  "version": "1.0.0",
+  "description": "*Name TBD* Project 2 for UNC Chapel Hill's Programming Bootcamp utilizing backend logic",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql2": "^3.9.7",
+    "sequelize": "^6.37.3"
+  }
+}
