@@ -29,12 +29,10 @@ router.post("/login", async (req, res) => {
       return;
     }
 
-    const validPassword = await userData.checkPassword(req.body.password);
+    // const validPassword = await userData.checkPassword(req.body.password);
 
     if (!validPassword) {
-      res
-        .status(400)
-        .json({ message: "Incorrect email or password, please try again" });
+      res.status(400).json({ message: "Incorrect password, please try again" });
       return;
     }
 
@@ -57,3 +55,19 @@ router.post("/logout", (req, res) => {
     res.status(404).end();
   }
 });
+
+router.get("/:query", (req, res) => {
+  try {
+    const searchQuery = req.params.query;
+    // const userData = User.findAll({
+    //   where: { username: req.body } || {
+    //       first_name: req.body.first_name,
+    //     } || { last_name: req.body.last_name },
+    // });
+    res.status(200).json(searchQuery);
+  } catch (res) {
+    res.status(400).json(err);
+  }
+});
+
+module.exports = router;

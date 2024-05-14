@@ -8,9 +8,6 @@ const sequelize = require("./config/connection");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-//Will need to uncomment this once we implement handlebars! -Daniel
-// const hbs = exphbs.create({ helpers });
-
 // const sess = {
 //   secret: 'Super secret secret',
 //   cookie: {},
@@ -28,6 +25,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(routes);
 
+console.log(PORT);
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log("Now listening"));
 });

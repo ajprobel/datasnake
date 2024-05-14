@@ -1,18 +1,12 @@
 const router = require("express").Router();
 const { User, Score } = require("../models");
+const withAuth = require("../utils/auth");
 
-router.get("/", async (req, res) => {
-  try {
-    const userData = await User.findAll();
-    const users = userData.map((user) => user.get({ plain: true }));
-    console.log(users);
-    res.status(200).json(users);
-  } catch (err) {
-    res.status(500).json(err);
-  }
+router.get("/", withAuth, async (req, res) => {
+  res.render("homepage");
 });
 
-router.get("/score", async (req, res) => {
+router.get("/highscores", async (req, res) => {
   try {
     const scoreData = await Scores.findAll({
       include: [
@@ -36,11 +30,6 @@ router.get("/makeaccount", async (req, res) => {
 });
 
 router.get("/login", (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect("/userinfo");
-    return;
-  }
-
   res.render("login");
 });
 

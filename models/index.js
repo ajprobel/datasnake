@@ -1,5 +1,5 @@
 // Model index
 const User = require(`./User`);
-const Scores = require(`./Scores`);
+const Score = require(`./Score`);
 
-module.exports = { User, Scores };
+module.exports = { User, Score };
