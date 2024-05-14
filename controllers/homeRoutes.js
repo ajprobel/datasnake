@@ -9,16 +9,17 @@ router.get("/", withAuth, async (req, res) => {
 router.get("/highscores", async (req, res) => {
   try {
     const scoreData = await Score.findAll({
+      attributes: ["score"],
       include: [
         {
           model: User,
+          attributes: ["username"],
         },
       ],
     });
     const scores = scoreData.map((score) => score.get({ plain: true }));
-    console.log(scores);
-    // res.render("highscores", scores);
-    res.status(200).json(scores);
+    // res.render("highscores", {scores});
+    res.status(200).json({ scores });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -32,8 +33,26 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
-router.get("/userinfo", (req, res) => {
-  res.render("userinfo");
+router.get("/userinfo", async (req, res) => {
+  try {
+    // need to add res.session.user_id
+    const userId = 1;
+    const userData = await User.findOne({
+      where: { id: userId },
+      attributes: ["first_name", "last_name", "username"],
+      include: [
+        {
+          model: Score,
+          attributes: ["score"],
+        },
+      ],
+    });
+    const user = userData.get({ plain: true });
+    // res.render("userinfo", user);
+    res.status(200).send(user.username);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 router.get("/finduser", (req, res) => {
