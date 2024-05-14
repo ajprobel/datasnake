@@ -1,7 +1,7 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
 
-class Score extends Model { }
+class Score extends Model {}
 
 Score.init(
   {
@@ -9,20 +9,20 @@ Score.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true,
     },
     user_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: 'User',
-        key: 'id'
-      }
+        model: "User",
+        key: "id",
+      },
     },
     high_score: {
       type: DataTypes.INTEGER,
       defaultValue: 0,
-      allowNull: false
+      allowNull: false,
     },
   },
   {
@@ -30,7 +30,7 @@ Score.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'score',
+    modelName: "score",
   }
 );
 
