@@ -14,12 +14,13 @@ Score.init(
     user_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      unique: false,
       references: {
         model: "User",
         key: "id",
       },
     },
-    high_score: {
+    score: {
       type: DataTypes.INTEGER,
       defaultValue: 0,
       allowNull: false,
