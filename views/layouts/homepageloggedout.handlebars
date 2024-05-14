@@ -1,13 +1,16 @@
-<div>
+<div class="container">
     <h1>LOG IN TO PLAY</h1>
 
-    <form>
-        <label for="username">Username:</label>
+    <form class="loggedOut">
+        <label class="username" for="username">Username:</label>
         <input type="text">
-        <label for="username">Password:</label>
+        <label class="password" for="password">Password:</label>
         <input type="text">
     </form>
-    
-    <button class="login" type="button"><b>Log In</b></button>
-    <button class="makeAccount" type="button"><b>Make an Account</b></button>
+    {{!-- Login button --}}
+    <a href="./hompageloggedin.handlebars">
+    <button class="login" type="button"><b>Log In</b></button></a>
+    {{!-- Make account button --}}
+    <a href="./makeaccount.handlebars">
+    <button class="makeAccount" type="button"><b>Make an Account</b></button></a>
 </div>
