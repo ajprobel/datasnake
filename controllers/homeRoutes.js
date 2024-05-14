@@ -9,7 +9,7 @@ router.get("/", withAuth, async (req, res) => {
 router.get("/highscores", async (req, res) => {
   try {
     const scoreData = await Score.findAll({
-      attributes: ["high_score"],
+      attributes: ["score"],
       include: [
         {
           model: User,
@@ -43,7 +43,7 @@ router.get("/userinfo", async (req, res) => {
       include: [
         {
           model: Score,
-          attributes: ["high_score"],
+          attributes: ["score"],
         },
       ],
     });

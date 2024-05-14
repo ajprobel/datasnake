@@ -5,7 +5,7 @@ router.put("/", async (req, res) => {
   try {
     const scoreData = await Score.update(
       {
-        high_score: req.body.high_score,
+        score: req.body.high_score,
       },
       {
         where: {
