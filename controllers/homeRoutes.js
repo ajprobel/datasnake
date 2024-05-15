@@ -10,7 +10,7 @@ router.get("/", withAuth, async (req, res) => {
 router.get("/highscores", async (req, res) => {
   try {
     const scoreData = await Score.findAll({
-      attributes: ["high_score"],
+      attributes: ["score"],
       include: [
         {
           model: User,
@@ -36,6 +36,7 @@ router.get("/login", (req, res) => {
   res.render("homepageloggedout");
 });
 
+//working!
 router.get("/userinfo", async (req, res) => {
   try {
     // need to add res.session.user_id
@@ -46,7 +47,7 @@ router.get("/userinfo", async (req, res) => {
       include: [
         {
           model: Score,
-          attributes: ["high_score"],
+          attributes: ["score"],
         },
       ],
     });
@@ -61,4 +62,5 @@ router.get("/userinfo", async (req, res) => {
 router.get("/finduser", (req, res) => {
   res.render("finduser");
 });
+
 module.exports = router;
