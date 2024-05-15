@@ -1,5 +1,9 @@
 <div>
-    <div class="name">{{user.firstname}} {{user.lastname}}</div>
-    <div class="username">{{user.username}}</div>
-    <div class="highscore">{{user.highscore}}</div>
+  <div class="name">{{first_name}} {{last_name}}</div>
+  <div class="username">{{username}}</div>
+  <div class="highscore">
+    {{#each scores as |score|}}
+      {{score}}
+    {{/each}}
+  </div>
 </div>

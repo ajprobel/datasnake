@@ -3,9 +3,10 @@ const { User, Score } = require("../models");
 const withAuth = require("../utils/auth");
 
 router.get("/", withAuth, async (req, res) => {
-  res.render("homepage");
+  res.render("homepageloggedin");
 });
 
+//working!
 router.get("/highscores", async (req, res) => {
   try {
     const scoreData = await Score.findAll({
@@ -18,21 +19,24 @@ router.get("/highscores", async (req, res) => {
       ],
     });
     const scores = scoreData.map((score) => score.get({ plain: true }));
-    // res.render("highscores", {scores});
-    res.status(200).json({ scores });
+    console.log({ scores });
+    res.render("highscorespage", { scores });
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
+//good!
 router.get("/makeaccount", async (req, res) => {
   res.render("makeaccount");
 });
 
+//working!
 router.get("/login", (req, res) => {
-  res.render("login");
+  res.render("homepageloggedout");
 });
 
+//working!
 router.get("/userinfo", async (req, res) => {
   try {
     // need to add res.session.user_id
@@ -48,8 +52,8 @@ router.get("/userinfo", async (req, res) => {
       ],
     });
     const user = userData.get({ plain: true });
-    // res.render("userinfo", user);
-    res.status(200).send(user.username);
+    console.log(user);
+    res.render("usernameinfopage", user);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -58,4 +62,5 @@ router.get("/userinfo", async (req, res) => {
 router.get("/finduser", (req, res) => {
   res.render("finduser");
 });
+
 module.exports = router;
