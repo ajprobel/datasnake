@@ -4,11 +4,16 @@
             <h1>HIGHSCORES</h1>
         </div>
         <div>
+{{#if scores.length}}
             <ol>
                 {{#each scores as |score|}}
                 {{> highscorespartial}}
                 {{/each}}
             </ol>
+    {{else}}
+    <p>No high scores to display yet!!!</p>     
+  
+{{/if}}
         </div>
     </div>
 </div>

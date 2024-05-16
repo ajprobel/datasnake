@@ -1,18 +1,21 @@
 <form class="row g-3">
     <h1>LOG IN TO PLAY</h1>
-  <div class="col-md-6">
-    <label for="inputEmail4" class="form-label">Email</label>
-    <input type="email" class="form-control" id="username-login">
-  </div>
-  <div class="col-md-6">
-    <label for="inputPassword4" class="form-label">Password</label>
-    <input type="password" class="form-control" id="password-login">
-  </div>
-  </div>
-  <div class="col-12">
-    <button class="login" type="submit" class="btn btn-primary">Login</button>
-  </div>
-</form>
+
+    <form class="login-form">
+      <div class="col-md-6">
+        <label class="username" for="username">Username:</label>
+        <input id="username-login" type="text">
+        </div>
+        <div class="col-md-6">
+        <label class="password" for="password">Password:</label>
+        <input id="password-login"type="password"> 
+        </div>
+        <div class="col-12">
+        <button class="login" type="submit"><b>Log In</b></button></a>
+        </div>
+    </form>
+    {{!-- Login button --}}
+   
     {{!-- Make account button --}}
     <a href="./makeaccount.handlebars">
     <button class="makeAccount" type="button"><b>Make an Account</b></button></a>
