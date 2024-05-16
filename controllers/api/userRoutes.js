@@ -9,7 +9,7 @@ router.post("/", async (req, res) => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
 
-      res.status(200).json(userData);
+      res.status(201).json(userData);
     });
   } catch (err) {
     res.status(400).json(err);
@@ -58,27 +58,27 @@ router.post("/logout", (req, res) => {
 });
 
 // Not using, but not ready to delete (tweak/routes-n-views)
-
-// router.get("/:query", async (req, res) => {
-//   try {
-//     const searchQuery = req.params.query;
-//     console.log(searchQuery);
-//     const userData = await User.findOne({
-//       where:
-//         // { username: searchQuery } ||
-//         { first_name: searchQuery },
-//       // || { last_name: searchQuery },
-//     });
-//     // const user = userData.get({ plain: true });
-//     // console.log(userData);
-//     res.redirect("/userinfo");
-//     //   , {
-//     //   ...user,
-//     //   logged_in: req.session.logged_in,
-//     // });
-//   } catch (err) {
-//     res.status(400).json(err);
-//   }
-// });
-
+{
+  // router.get("/:query", async (req, res) => {
+  //   try {
+  //     const searchQuery = req.params.query;
+  //     console.log(searchQuery);
+  //     const userData = await User.findOne({
+  //       where:
+  //         // { username: searchQuery } ||
+  //         { first_name: searchQuery },
+  //       // || { last_name: searchQuery },
+  //     });
+  //     // const user = userData.get({ plain: true });
+  //     // console.log(userData);
+  //     res.redirect("/userinfo");
+  //     //   , {
+  //     //   ...user,
+  //     //   logged_in: req.session.logged_in,
+  //     // });
+  //   } catch (err) {
+  //     res.status(400).json(err);
+  //   }
+  // });
+}
 module.exports = router;

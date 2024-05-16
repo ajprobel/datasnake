@@ -9,7 +9,7 @@
     <h2>Highscore</h2>
     <div class="highscore"><p id="user-hs"></p></div>
     <h2>All Scores</h2>
-    <div class="highscore">
+    <div id="scores-list" class="highscore">
       {{#each scores as |score|}}
         <span class="scorespan">{{score.score}}</span>
       {{/each}}

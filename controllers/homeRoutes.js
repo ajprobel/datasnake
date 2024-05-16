@@ -27,17 +27,14 @@ router.get("/highscores", withAuth, async (req, res) => {
   }
 });
 
-//good!
 router.get("/makeaccount", async (req, res) => {
-  res.render("makeaccount", { logged_in: req.session.logged_in });
+  res.render("makeaccount");
 });
 
-//working!
 router.get("/login", (req, res) => {
   res.render("homepageloggedout");
 });
 
-//working!
 router.get("/account", withAuth, async (req, res) => {
   try {
     const userId = req.session.user_id;
@@ -66,8 +63,20 @@ router.get("/account", withAuth, async (req, res) => {
 router.get("/userinfo/:query", withAuth, async (req, res) => {
   try {
     const searchQuery = req.params.query;
+    var firstLet;
+    var secLet;
+    var lastLet;
+    // MDN article on 'String.prototype.at()' method: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/at
+    const getOutsideLetters = () => {
+      firstLet = searchQuery.at(0);
+      secLet = searchQuery.at(1);
+      lastLet = searchQuery.at(searchQuery.length - 1);
+    };
+    getOutsideLetters();
+    console.log("first:" + firstLet + "second:" + secLet + "last:" + lastLet);
+    // W3 article on MySQL 'LIKE' queries: https://www.w3schools.com/mysql/mysql_like.asp
     const [results, metadata] = await sequelize.query(
-      `SELECT id FROM user WHERE username= "${searchQuery}" OR first_name= "${searchQuery}" OR last_name= "${searchQuery}";`
+      `SELECT id FROM user WHERE username LIKE "${firstLet + secLet}%${lastLet}" OR first_name LIKE "${firstLet + secLet}%${lastLet}" OR last_name LIKE "${firstLet + secLet}%${lastLet}";`
     );
     const thisUser = results[0];
     const userId = thisUser.id;
