@@ -25,10 +25,34 @@
     </div>
 </nav>
 <div>
-    <container>
-        {{!-- Insert Game Here --}}
-    </container>
+  <container>
+    <style>
+      canvas {
+        height: auto;
+        margin: 15;
+      }
+      canvas {
+        background: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      canvas {
+        border: 1px solid white;
+      }
+    </style>
+    <canvas width="400px" height="400px" id='game'></canvas>
+    <button id='start'>Start Game</button>
+    <select id='difficulty'>
+      <option>Easy</option>
+      <option>Medium</option>
+      <option>Hard</option>
+    </select>
+    <p>Your Score: <span id="score"></span></p>
+  </container>
 </div>
 <footer class="footer">
     <h6>Made with love by group 4</h6>
 </footer>
+
+<script src="/js/game.js"></script>
