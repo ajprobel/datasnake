@@ -19,3 +19,10 @@ const loginHandler = async (event) => {
   }
 };
 document.querySelector(".login-form").addEventListener("submit", loginHandler);
+
+const makeActHandler = async (event) => {
+  event.preventDefault();
+  window.location.replace("/makeaccount");
+};
+
+document.querySelector("#make-acct").addEventListener("click", makeActHandler);

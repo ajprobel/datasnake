@@ -1,49 +1,13 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="./homepageloggedout.handlebars">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./highscorespage.handlebars">High
-                        Scores</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./usersearch.handlebars">User Search</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./account.handlebars">My Account</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
 <div>
   <container>
     <style>
-      canvas {
-        height: auto;
-        margin: 15;
-      }
-      canvas {
-        background: black;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      canvas {
-        border: 1px solid white;
-      }
+      canvas { height: auto; margin: 15; } canvas { background: black; display:
+      flex; align-items: center; justify-content: center; } canvas { border: 1px
+      solid white; }
     </style>
-    <canvas width="400px" height="400px" id='game'></canvas>
-    <button id='start'>Start Game</button>
-    <select id='difficulty'>
+    <canvas width="400px" height="400px" id="game"></canvas>
+    <button id="start">Start Game</button>
+    <select id="difficulty">
       <option>Easy</option>
       <option>Medium</option>
       <option>Hard</option>
@@ -52,7 +16,7 @@
   </container>
 </div>
 <footer class="footer">
-    <h6>Made with love by group 4</h6>
+  <h6>Made with love by group 4</h6>
 </footer>
 
 <script src="/js/game.js"></script>
