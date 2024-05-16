@@ -1,16 +1,26 @@
-<div class="container">
-  <h1>New Account</h1>
-
-  <form id="signup-form" class="form">
-    <label class="firstName" for="firstName">FirstName:</label>
-    <input type="text" id="fr-nm"/>
-    <label class="lastName" for="lastName">LastName</label>
-    <input type="text" id="ls-nm"/>
-    <label class="username" for="username">Username:</label>
-    <input type="text" id="usr-nm"/>
-    <label class="password" for="password">Password:</label>
-    <input type="password" id="pswd"/>
-    <button class="login" type="submit"><b>Create Account</b></button></a>
-  </form>
-</div>
+<form id="signup-form" class="row g-3">
+    <h1>New Account</h1>
+      <div class="col-md-6">
+    <label for="firstName" class="form-label">First Name</label>
+    <input type="text" class="form-control" id="fr-nm">
+  </div>
+  <div class="col-md-6">
+    <label for="lastName" class="form-label">Last Name</label>
+    <input type="text" class="form-control" id="ls-nm">
+  </div>
+  </div>
+  <div class="col-md-6">
+    <label for="username" class="form-label">Username</label>
+    <input type="text" class="form-control" id="usr-nm">
+  </div>
+  <div class="col-md-6">
+    <label for="password" class="form-label">Password</label>
+    <input type="password" class="form-control" id="pswd">
+  </div>
+  </div>
+  <div class="col-12">
+    <a href="./hompageloggedin.handlebars">
+    <button type="button" class="btn btn-primary" id="login">Create Account</button></a>
+  </div>
+</form>
 <script src="/js/signup.js"></script>

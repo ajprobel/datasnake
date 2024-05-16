@@ -1,13 +1,23 @@
-<div class="container">
+<form class="row g-3">
     <h1>LOG IN TO PLAY</h1>
 
     <form class="login-form">
+      <div class="col-md-6">
         <label class="username" for="username">Username:</label>
         <input id="username-login" type="text">
+        </div>
+        <div class="col-md-6">
         <label class="password" for="password">Password:</label>
         <input id="password-login"type="password"> 
+        </div>
+        <div class="col-12">
         <button class="login" type="submit"><b>Log In</b></button></a>
+        </div>
     </form>
-    <button class="makeAccount" type="button" id="make-acct"><b>Make an Account</b></button></a>
+    {{!-- Login button --}}
+   
+    {{!-- Make account button --}}
+    <a href="./makeaccount.handlebars">
+    <button class="makeAccount" type="button"><b>Make an Account</b></button></a>
 </div>
 <script src="/js/login.js"></script>
