@@ -1,9 +1,19 @@
 <div>
-  <div class="name">{{first_name}} {{last_name}}</div>
-  <div class="username">{{username}}</div>
-  <div class="highscore">
-    {{#each scores as |score|}}
-      {{score}}
-    {{/each}}
+  <div class="user-result">
+    <h1>User Result</h1>
+
+    <h2>Name</h2>
+    <div class="name">{{first_name}} {{last_name}}</div>
+    <h2>Username</h2>
+    <div class="username">{{username}}</div>
+    <h2>Highscore</h2>
+    <div class="highscore"><p id="user-hs"></p></div>
+    <h2>All Scores</h2>
+    <div class="highscore">
+      {{#each scores as |score|}}
+        <span class="scorespan">{{score.score}}</span>
+      {{/each}}
+    </div>
   </div>
 </div>
+<script src="/js/geths.js"></script>

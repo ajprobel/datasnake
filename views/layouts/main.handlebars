@@ -7,6 +7,17 @@
   </head>
 
   <body>
+    {{#if logged_in}}
+      <div>
+        <nav class="navbar">
+          <button id="home-btn" type="button">HOME</button>
+          <button id="hs-btn" type="button">High Scores</button>
+          <button id="usr-srch" type="button">User Search</button>
+          <button id="act-btn" type="button">Account</button>
+          <button id="logout-btn" type="button">Logout</button>
+        </nav>
+      </div>
+    {{/if}}
     <div class="header">
       <h2>Hello! Welcome to our game!</h2>
     </div>
@@ -18,5 +29,6 @@
     <div class="footer">
       <h6>Made by Group 4</h6>
     </div>
+    <script src="/js/navbar.js"></script>
   </body>
 </html>
