@@ -1,10 +1,14 @@
-<div id="header">
-    <h1>HIGHSCORES</h1>
-</div>
-<div>
-    <ol>
-        {{#each scores as |score|}}
-        {{> highscorespartial}}
-        {{/each}}
-    </ol>
+<div class="card text-center">
+    <div class="card-body row row-cols-2">
+        <div id="header">
+            <h1>HIGHSCORES</h1>
+        </div>
+        <div>
+            <ol>
+                {{#each scores as |score|}}
+                {{> highscorespartial}}
+                {{/each}}
+            </ol>
+        </div>
+    </div>
 </div>
