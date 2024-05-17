@@ -13,8 +13,22 @@
     text-align: center;
 }
 
+h2 span{
+    justify-content: center;
+    display: inline-block;
+}
+
+#title{
+    font-size: 45px;
+}
+
+#snake{
+    height: 45px;
+    width: 45px;
+}
+
 .logInHeader {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     margin-top: -10px;
     padding: 20px;
@@ -57,7 +71,7 @@
 .username,
 .password {
     background-color: #21ef80;
-    font-size: 36px;
+    font-size: 30px;
     color: #282828;
     text-align: center;
     display: block;
@@ -130,7 +144,7 @@
     color: #282828;
     border: 3px solid #ffffff;
     padding: 0px 10px;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: bold;
 }
 
@@ -166,6 +180,7 @@
 
 #signup-form {
     background-color: #21ef80;
+    -webkit-box-reflect: below -0.3em linear-gradient(transparent,#21ef80);
 }
 
 .form-label {
