@@ -61,20 +61,24 @@
     justify-content: center;
 } */
 
-.text{
+h2{
     color: #21ef80;
     font-size: 30px;
     font-family: 'Electrolize', 'Times New Roman';
     align-items: center;
     align-self: center;
     justify-content: center;
-    -webkit-box-reflect: below -0.3em linear-gradient(transparent, #5e17eb)
+    -webkit-box-reflect: below -0.3em linear-gradient(transparent,#21ef80);
 }
 
-.text span{
-    align-items: center;
-    align-self: center;
+h2 span{
     justify-content: center;
+    display: inline-block;
+}
+
+#snake{
+    height: 40px;
+    width: 40px;
 }
 
 ol {
