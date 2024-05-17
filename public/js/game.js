@@ -1,6 +1,8 @@
 var canvas = document.getElementById(`game`);
 var context = canvas.getContext('2d');
 var scoreEl = document.getElementById('score');
+var saveScoreBtn = document.getElementById('saveScore');
+
 // the canvas width & height, snake x & y, and the apple x & y, all need to be a multiples of the grid size in order for collision detection to work
 // (e.g. 16 * 25 = 400)
 var grid = 16;
@@ -20,11 +22,13 @@ var apple = {
     x: 320,
     y: 320,
 };
+
 // get random whole numbers in a specific range
 // @see https://stackoverflow.com/a/1527820/2124254
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
+
 // These were added by Daniel
 let animationFrameId;
 let finalscore = 0;
@@ -34,13 +38,43 @@ const chooseDiff = () => {
     diffVal = diffDrop.value;
 };
 diffDrop.addEventListener('change', chooseDiff);
-// Added by Daniel
+
+// Added by Daniel - altered by James
 const startBtn = document.querySelector('#start');
 startBtn.addEventListener('click', () => {
     scoreEl.innerHTML = ("");
     console.log("game started!");
+    hideSaveScore();
     loop();
 });
+
+// logic for save score button
+saveScoreBtn.addEventListener('click', async () => {
+    const newScore = scoreEl.innerText;
+    console.log(`saving your score of ${newScore}`);
+    const response = await fetch('/api/scores/newScore', {
+        method: 'POST',
+        body: JSON.stringify({ newScore }),
+        headers: { 'Content-Type': 'application/json' },
+    });
+
+    if (response.ok) {
+        alert("score saved!");
+    } else {
+        alert("Failed to save score");
+    }
+});
+
+// show save score button
+function showSaveScore() {
+    saveScoreBtn.setAttribute("style", "display:block");
+};
+
+//hide save score button
+function hideSaveScore() {
+    saveScoreBtn.setAttribute("style", "display:none");
+};
+
 // game loop
 function loop() {
     animationFrameId = requestAnimationFrame(loop);
@@ -117,7 +151,9 @@ function loop() {
                         finalscore = Math.round(snake.cells.length * 2);
                         break;
                 }
+                // James - added code for game ending
                 scoreEl.innerHTML = finalscore;
+                showSaveScore();
                 snake.x = 160;
                 snake.y = 160;
                 snake.cells = [];
@@ -159,3 +195,4 @@ document.addEventListener('keydown', function (e) {
         snake.dx = 0;
     }
 });
+
