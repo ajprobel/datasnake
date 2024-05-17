@@ -1,20 +1,21 @@
-<div>
-    <h3 class="logInHeader">LOG IN TO PLAY</h3>
+<div class="card-background">
+  <h3 class="logInHeader">LOG IN TO PLAY</h3>
 
-    <form class=" row g-3 login-form">
-      <div class="col-md-6">
+  <form class="row g-3 login-form">
+    <div id="userForm" class="col-md-12 center">
+      <div class="usernameInput">
         <label class="username" for="username">Username:</label>
         <input id="username-login" type="text">
-        </div>
-        <div class="col-md-3 center">
+      </div>
+      <div id="userForm" class="col-md-12 center">
         <label class="password" for="password">Password:</label>
-        <input id="password-login"type="password"> 
-        </div>
-        <div class="col-12">
-        <button class="login" type="submit"><b>Log In</b></button></a>
-        </div>
-        </div>
-    </form>
-    <button id="make-acct" class="makeAccount" type="button"><b>Make an Account</b></button></a>
+        <input id="password-login" type="password">
+      </div>
+      <div id="loginButton" class="col-12 center">
+        <button class="login" type="submit">Log In</button></a>
+      </div>
+    </div>
+  </form>
+  <button id="make-acct" class="col-12" type="button">Make an Account</button></a>
 </div>
 <script src="/js/login.js"></script>
