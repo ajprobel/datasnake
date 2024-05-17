@@ -1,1 +1,106 @@
 /* temp css */
+* {
+    background-color: #282828;
+    font-family: 'Electrolize', 'Times New Roman', Times, serif;
+}
+
+.header {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.h1 {
+    text-align: center;
+}
+
+.card-body {
+    background-color: #21ef80;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+}
+
+.name,
+.username,
+.password {
+    padding: 5px;
+    margin: 10px;
+    background-color: #5e17eb;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-label{
+    color: #ffffff;
+    font-size: 12px;
+    align-items: flex-start;
+}
+
+.form-control,
+.lookup {
+    padding: 5px;
+    margin: 10px;
+    background-color: #5e17eb;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2 {
+    font-size: 20px;
+    color: black;
+    font-family: 'Electrolize', 'Times New Roman';
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+
+ol {
+    font-size: 20px;
+    color: black;
+    font-family: 'Electrolize', 'Times New Roman';
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+
+button {
+    padding: 5px;
+    margin: 20px;
+    background-color: #5e17eb;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+.makeAccount {
+    padding: 10px;
+    margin: 20px;
+    color:#282828;
+    font-size: 16px;
+    background-color: #21ef80;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+
+.nav-item {
+    padding: 10px;
+    margin: 20px;
+    background-color: #5e17eb;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footer {
+    background-color: #5e17eb;
+    color: #ffffff;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+}

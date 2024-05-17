@@ -9,13 +9,14 @@ router.post("/", async (req, res) => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
 
-      res.status(200).json(userData);
+      res.status(201).json(userData);
     });
   } catch (err) {
     res.status(400).json(err);
   }
 });
 
+// working
 router.post("/login", async (req, res) => {
   try {
     console.log(req.body);
@@ -29,12 +30,12 @@ router.post("/login", async (req, res) => {
       return;
     }
 
-    // const validPassword = await userData.checkPassword(req.body.password);
+    const validPassword = await userData.checkPassword(req.body.password);
 
-    // if (!validPassword) {
-    //   res.status(400).json({ message: "Incorrect password, please try again" });
-    //   return;
-    // }
+    if (!validPassword) {
+      res.status(400).json({ message: "Incorrect password, please try again" });
+      return;
+    }
 
     req.session.save(() => {
       req.session.user_id = userData.id;
@@ -56,18 +57,28 @@ router.post("/logout", (req, res) => {
   }
 });
 
-router.get("/:query", (req, res) => {
-  try {
-    const searchQuery = req.params.query;
-    // const userData = User.findAll({
-    //   where: { username: req.body } || {
-    //       first_name: req.body.first_name,
-    //     } || { last_name: req.body.last_name },
-    // });
-    res.status(200).json(searchQuery);
-  } catch (res) {
-    res.status(400).json(err);
-  }
-});
-
+// Not using, but not ready to delete (tweak/routes-n-views)
+{
+  // router.get("/:query", async (req, res) => {
+  //   try {
+  //     const searchQuery = req.params.query;
+  //     console.log(searchQuery);
+  //     const userData = await User.findOne({
+  //       where:
+  //         // { username: searchQuery } ||
+  //         { first_name: searchQuery },
+  //       // || { last_name: searchQuery },
+  //     });
+  //     // const user = userData.get({ plain: true });
+  //     // console.log(userData);
+  //     res.redirect("/userinfo");
+  //     //   , {
+  //     //   ...user,
+  //     //   logged_in: req.session.logged_in,
+  //     // });
+  //   } catch (err) {
+  //     res.status(400).json(err);
+  //   }
+  // });
+}
 module.exports = router;
