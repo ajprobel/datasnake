@@ -5,12 +5,18 @@
 }
 
 .header {
+    margin-top: 30px;
     font-size: 24px;
     font-weight: 600;
+    color:#ffffff;
+    text-align: center;
 }
 
-.h1 {
+.logInHeader {
+    font-size: 24px;
+    font-weight:600;
     text-align: center;
+    color:#ffffff;
 }
 
 .card-body {
@@ -27,10 +33,21 @@
     background-color: #5e17eb;
     color: #ffffff;
     border: 1px solid #ffffff;
+    align-content: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
     border-radius: 3px;
-    text-align: center;
     justify-content: center;
-    align-items: center;
+}
+
+#username-login,
+#password-login {
+    padding: 5px;
+    margin: 10px;
+    background-color: #21ef80;
+    border: 3px solid #ffffff;
+
 }
 
 .form-label{
