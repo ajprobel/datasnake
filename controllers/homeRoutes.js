@@ -13,6 +13,7 @@ router.get("/highscores", withAuth, async (req, res) => {
   try {
     const scoreData = await Score.findAll({
       attributes: ["score"],
+      order: [["score", "DESC"]],
       include: [
         {
           model: User,
