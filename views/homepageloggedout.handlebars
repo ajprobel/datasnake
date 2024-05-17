@@ -1,7 +1,7 @@
-<form class="row g-3">
-    <h1>LOG IN TO PLAY</h1>
+<div>
+    <h3>LOG IN TO PLAY</h3>
 
-    <form class="login-form testing">
+    <form class=" row g-3 login-form">
       <div class="col-md-6">
         <label class="username" for="username">Username:</label>
         <input id="username-login" type="text">
@@ -13,11 +13,8 @@
         <div class="col-12">
         <button class="login" type="submit"><b>Log In</b></button></a>
         </div>
+        </div>
     </form>
-    {{!-- Login button --}}
-   
-    {{!-- Make account button --}}
-    <a href="./makeaccount.handlebars">
-    <button class="makeAccount" type="button"><b>Make an Account</b></button></a>
+    <button id="make-acct" class="makeAccount" type="button"><b>Make an Account</b></button></a>
 </div>
 <script src="/js/login.js"></script>
