@@ -152,7 +152,7 @@ function loop() {
             break;
         }
         // James - added code for game ending
-        scoreEl.innerHTML = "Your Score: " + finalscore;
+        scoreEl.innerHTML = finalscore;
         showSaveScore();
         snake.x = 160;
         snake.y = 160;
@@ -194,8 +194,4 @@ document.addEventListener("keydown", function (e) {
     snake.dy = grid;
     snake.dx = 0;
   }
-});
-
-document.addEventListener("keydown", (event) => {
-  event.preventDefault();
 });
