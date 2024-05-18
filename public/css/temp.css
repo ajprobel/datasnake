@@ -14,6 +14,8 @@
 }
 
 .logInHeader {
+    background-color: #282828;
+    border: none;
     font-size: 24px;
     font-weight: 600;
     margin-top: -10px;
@@ -24,11 +26,9 @@
 
 .card-background {
     background-color: #282828;
-    margin-bottom: 50px;
 }
 
-#userForm,
-.newAcctCard {
+#userForm {
     background-color: #21ef80;
     display: flex;
     flex-wrap: wrap;
@@ -129,6 +129,7 @@
     background-color: #21ef80;
     color: #282828;
     border: 3px solid #ffffff;
+    border-radius: 3px;
     padding: 0px 10px;
     font-size: 36px;
     font-weight: bold;
@@ -158,14 +159,24 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 60px 200px;
     max-width: 60%;
     display: block;
     border: 5px solid #ffffff;
 }
 
+#acctCard {
+    padding: 60px 200px;
+    background-color: #21ef80;
+}
+
 #signup-form {
     background-color: #21ef80;
+    margin: 0px !important:
+
+}
+
+.newAcctCard {
+    padding: none;
 }
 
 .form-label {
@@ -186,7 +197,8 @@
 #fr-nm,
 #ls-nm,
 #usr-nm,
-#pswd {
+#pswd,
+#usf-input {
     background-color: #5e17eb;
     border: 3px solid #ffffff;
     font-size: 24px;
@@ -229,7 +241,8 @@
 #hs-btn,
 #usr-srch,
 #act-btn,
-#lgt-btn {
+#lgt-btn,
+.search {
     font-size: 16px;
     color: #ffffff;
     background-color: #5e17eb;
@@ -269,12 +282,19 @@
     border: 1px solid #5e17eb;
 }
 
-.navbar-toggler-icon{
+.search:hover {
+    color: #282828;
     background-color: #21ef80;
-    color:#282828;
+    border: 1px solid #5e17eb;
+}
+
+.navbar-toggler-icon {
+    background-color: #21ef80;
+    color: #282828;
     border: 1px solid #ffffff;
     border-radius: 3px;
 }
+
 #gameBackground {
     padding: 60px;
 }
@@ -324,6 +344,103 @@
     color: #21ef80;
 }
 
+#usersearchCard {
+    padding:none;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#searchBkgrnd {
+    border: none;
+    background-color: #21ef80;
+}
+
+h3 {
+    background-color: #21ef80;
+    border: 3px solid #21ef80;
+    min-width: 600px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+#user-search-form {
+   background-color: #21ef80; 
+}
+
+.lookup {
+    background-color: #21ef80;
+    font-size: 24px;
+    padding: 40px;
+}
+
+.account {
+    color: #ffffff;
+    justify-content: center;
+    text-align: center;
+}
+
+.account h2 {
+color: #21ef80;
+}
+
+.acctCard {
+    max-width: 60%;
+    background-color: #282828;
+    border: 5px solid #5e17eb;
+    box-shadow: #21ef80;
+    justify-content: block;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    background-color: #282828;
+    max-width: 100%;
+    display: block;
+    padding: 20px 600px;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#usr-name {
+    background-color: #282828;
+    color: #ffffff;
+}
+
+.card-body {
+    background-color: #21ef80;
+    color: #282828;
+    border: 5px solid #5e17eb;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.highScores {
+    background-color: #21ef80;
+}
+
+.hsList {
+    background-color: #21ef80;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.hsList ol {
+    background-color: #21ef80;
+}
+
+.hsList li {
+    background-color: #21ef80;
+}
 
 
 .footer {

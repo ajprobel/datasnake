@@ -1,19 +1,17 @@
-<div class="card text-center">
-    <div class="card-body row row-cols-2">
-        <div id="header">
-            <h1>HIGHSCORES</h1>
+<div class="container">
+        <div class="card-body row row-cols-2">
+            <h1 class="highScores">HIGHSCORES</h1>
+            <div class="hsList">
+                {{#if scores.length}}
+                <ol>
+                    {{#each scores as |score|}}
+                    {{> highscorespartial}}
+                    {{/each}}
+                </ol>
+                {{else}}
+                <p>No high scores to display yet!!!</p>
+
+                {{/if}}
+            </div>
         </div>
-        <div>
-{{#if scores.length}}
-            <ol>
-                {{#each scores as |score|}}
-                {{> highscorespartial}}
-                {{/each}}
-            </ol>
-    {{else}}
-    <p>No high scores to display yet!!!</p>     
-  
-{{/if}}
-        </div>
-    </div>
 </div>
