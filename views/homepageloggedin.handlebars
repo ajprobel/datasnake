@@ -1,11 +1,26 @@
 <div class="body">
   <container id="gameBackground">
-    <style id="game">
-      canvas { height: auto; margin: 15; } canvas { background: black; display:
-      flex; align-items: center; justify-content: center; } canvas { border: 1px
-      solid white; }
-    </style>
-    <canvas width="400px" height="400px" id="game"></canvas>
+    <div id="game">
+      <style>
+        canvas {
+          height: auto;
+          margin: 15;
+        }
+
+        canvas {
+          background: black;
+          display:
+            flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        canvas {
+          border: 1px solid white;
+        }
+      </style>
+      <canvas width="400px" height="400px" id="game"></canvas>
+    </div>
     <button id="start">Start Game</button>
     <select id="difficulty">
       <option>Easy</option>
