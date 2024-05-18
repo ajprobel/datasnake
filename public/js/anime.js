@@ -44,12 +44,40 @@ anime({
 
 anime({
   targets: "#home-btn",
-  translateY: [120,0],
-  easing: "easeOutExpo"
+  translateY: [200, 0],
+  easing: "easeInOutExpo",
+  // delay: anime.stagger(100)
+  duration: 1000
 });
 
 anime({
-  targets: "#navbarNav",
-  translateY: [120,0],
-  easing: "easeOutExpo"
+  targets: "#hs-btn",
+  translateY: [200,0],
+  easing: "easeInOutExpo",
+  // delay: anime.stagger(100)
+  duration: 1200
+});
+
+anime({
+  targets: "#usr-srch",
+  translateY: [200,0],
+  easing: "easeInOutExpo",
+  // delay: anime.stagger(100)
+  duration: 1400
+});
+
+anime({
+  targets: "#act-btn",
+  translateY: [200,0],
+  easing: "easeInOutExpo",
+  // delay: anime.stagger(100)
+  duration: 1600
+});
+
+anime({
+  targets: "#lgt-btn",
+  translateY: [200,0],
+  easing: "easeInOutExpo",
+  // delay: anime.stagger(100)
+  duration: 1800
 });
