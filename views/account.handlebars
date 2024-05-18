@@ -1,17 +1,21 @@
 <div class="account">
-  <h1>YOUR ACCOUNT</h1>
+  <div class="acctCard">
+    <h1>YOUR ACCOUNT</h1>
 
-  <h2>Name</h2>
-  <div class="name">{{first_name}} {{last_name}}</div>
-  <h2>Username</h2>
-  <div class="username">{{username}}</div>
-  <h2>Highscore</h2>
-  <div class="highscore"><p id="user-hs"></p></div>
-  <h2>All Scores</h2>
-  <div id="scores-list" class="highscore">
-    {{#each scores as |score|}}
+    <h2>Name</h2>
+    <div class="name">{{first_name}} {{last_name}}</div>
+    <h2>Username</h2>
+    <div id="usr-name" class="username">{{username}}</div>
+    <h2>Highscore</h2>
+    <div class="highscore">
+      <p id="user-hs"></p>
+    </div>
+    <h2>All Scores</h2>
+    <div id="scores-list" class="highscore">
+      {{#each scores as |score|}}
       <span class="scorespan">{{score.score}}</span>
-    {{/each}}
+      {{/each}}
+    </div>
   </div>
 </div>
 <script src="/js/geths.js"></script>
