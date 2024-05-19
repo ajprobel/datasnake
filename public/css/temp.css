@@ -14,11 +14,13 @@
 }
 
 h2 span{
+    font-family: Wallpoet;
     justify-content: center;
     display: inline-block;
 }
 
 #title{
+    font-family: Wallpoet;
     font-size: 45px;
 }
 

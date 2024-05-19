@@ -12,7 +12,7 @@ anime
     scale: [6, 1],
     opacity: [0, 1],
     easing: "easeOutExpo",
-    duration: 800,
+    duration: 650,
     delay: anime.stagger(100),
   })
   .add({
@@ -22,8 +22,8 @@ anime
     scale: [1, 1],
     opacity: [1, 0],
     easing: "easeOutExpo",
-    duration: 800,
-    delay: anime.stagger(100),
+    duration: 650,
+    delay: anime.stagger(120),
   })
   .add({
     targets: "#title span",
@@ -32,18 +32,9 @@ anime
     scale: [1, 1],
     opacity: [0, 1],
     easing: "easeOutExpo",
-    duration: 600,
-    delay: anime.stagger(100),
+    duration: 450,
+    delay: anime.stagger(120),
   });
-
-// anime({
-//   targets: "#snake",
-//   rotate: {
-//     value: 1800,
-//     duration: 4000,
-//     easing: "easeInOutSine",
-//   }
-// });
 
 anime({
   targets: "#snake",
@@ -53,7 +44,7 @@ anime({
   },
   rotate: {
     value: 720,
-    duration: 1000,
+    duration: 800,
     easing: "easeInOutSine",
   },
   scale:{
@@ -62,7 +53,7 @@ anime({
     delay: 800,
     easing: "easeInOutQuart",
   },
-  delay: 4500
+  delay: 4000
 });
 
 anime({
@@ -84,7 +75,7 @@ anime({
   translateY: [150,0],
   color: ["#5e17eb", "#ffffff"],
   easing: "easeOutExpo",
-  duration: 3000
+  duration: 4000
 });
 anime({
   targets: "#act-btn",
@@ -95,8 +86,9 @@ anime({
 });
 anime({
   targets: "#lgt-btn",
-  color: ["#5e17eb", "#ffffff"],
   translateY: [150,0],
+  color: ["#5e17eb", "#ffffff"],
   easing: "easeOutExpo",
   duration: 7000
 });
+
