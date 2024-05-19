@@ -23,5 +23,3 @@ const logout = async () => {
     alert("Oops! Failed to log out.");
   }
 };
-
-lgtBtnEl.addEventListener("click", logout);
