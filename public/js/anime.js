@@ -105,7 +105,7 @@ anime({
     duration: 1500,
     value: "2px 2px 10px #21ef80"
   }],
-  translateY: [-1000, 0],
+  translateX: [-1000, 0],
   duration: 1500,
   delay: 4500
 });
