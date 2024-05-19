@@ -7,6 +7,7 @@ anime
   })
   .add({
     targets: "#title span",
+    color: "#5e17eb",
     translateY: [-600, 0],
     scale: [6, 1],
     opacity: [0, 1],
@@ -16,6 +17,7 @@ anime
   })
   .add({
     targets: "#title span",
+    color: "#21ef80",
     translateX: [0, -1000],
     scale: [1, 1],
     opacity: [1, 0],
@@ -25,6 +27,7 @@ anime
   })
   .add({
     targets: "#title span",
+    color: "#21ef80",
     translateX: [1000, 0],
     scale: [1, 1],
     opacity: [0, 1],
@@ -33,51 +36,67 @@ anime
     delay: anime.stagger(100),
   });
 
+// anime({
+//   targets: "#snake",
+//   rotate: {
+//     value: 1800,
+//     duration: 4000,
+//     easing: "easeInOutSine",
+//   }
+// });
+
 anime({
   targets: "#snake",
+  translateX:{
+    value: [-1000, 0],
+    duration: 1000
+  },
   rotate: {
-    value: 1440,
-    duration: 4000,
+    value: 720,
+    duration: 1000,
     easing: "easeInOutSine",
   },
+  scale:{
+    value: 1.2,
+    duration: 1000,
+    delay: 800,
+    easing: "easeInOutQuart",
+  },
+  delay: 4500
 });
 
 anime({
   targets: "#home-btn",
-  translateY: [200, 0],
-  easing: "easeInOutExpo",
-  // delay: anime.stagger(100)
-  duration: 1000
+  translateY: [150,0],
+  color: ["#5e17eb", "#ffffff"],
+  easing: "easeOutExpo",
+  duration: 7000
 });
-
 anime({
   targets: "#hs-btn",
-  translateY: [200,0],
-  easing: "easeInOutExpo",
-  // delay: anime.stagger(100)
-  duration: 1200
+  translateY: [150,0],
+  color: ["#5e17eb", "#ffffff"],
+  easing: "easeOutExpo",
+  duration: 5000
 });
-
 anime({
   targets: "#usr-srch",
-  translateY: [200,0],
-  easing: "easeInOutExpo",
-  // delay: anime.stagger(100)
-  duration: 1400
+  translateY: [150,0],
+  color: ["#5e17eb", "#ffffff"],
+  easing: "easeOutExpo",
+  duration: 3000
 });
-
 anime({
   targets: "#act-btn",
-  translateY: [200,0],
-  easing: "easeInOutExpo",
-  // delay: anime.stagger(100)
-  duration: 1600
+  translateY: [150,0],
+  color: ["#5e17eb", "#ffffff"],
+  easing: "easeOutExpo",
+  duration: 5000
 });
-
 anime({
   targets: "#lgt-btn",
-  translateY: [200,0],
-  easing: "easeInOutExpo",
-  // delay: anime.stagger(100)
-  duration: 1800
+  color: ["#5e17eb", "#ffffff"],
+  translateY: [150,0],
+  easing: "easeOutExpo",
+  duration: 7000
 });
