@@ -34,6 +34,13 @@ anime
     easing: "easeOutExpo",
     duration: 450,
     delay: anime.stagger(120),
+  })
+  .add({
+    targets: "#title",
+    textShadow: [{
+      duration: 1300,
+      value: "2px 2px 10px #FA3317"
+    }]
   });
 
 anime({
@@ -95,10 +102,10 @@ anime({
 anime({
   targets: "#endText",
   textShadow: [{
-    duration: 1300,
-    value: "2px 2px 5px #21ef80"
+    duration: 1500,
+    value: "2px 2px 10px #21ef80"
   }],
-  translateY: [300, 0],
+  translateY: [-1000, 0],
   duration: 1500,
   delay: 4500
 });
