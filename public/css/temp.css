@@ -50,7 +50,7 @@ h2 span {
 }
 
 .login-form {
-  margin: 5px;
+  margin: 50px;
   padding: 60px 40px 10px 40px;
   display: block;
   align-items: center;
@@ -179,7 +179,7 @@ h2 span {
 }
 
 #acctCard {
-  padding: 60px 200px;
+  padding: 4vw 10vw;
   background-color: #21ef80;
 }
 
@@ -332,7 +332,7 @@ h2 span {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 #start:hover {
@@ -464,8 +464,11 @@ h3 {
   font-size: 12px;
 }
 
-#score {
-  color: white;
-  text-align: center;
-  margin-top: 20px;
+@media screen and (max-width: 600px) {
+  .form-label {
+    font-size: 5vw;
+  }
+  #login {
+    font-size: 4vw;
+  }
 }
