@@ -410,8 +410,8 @@ h3 {
 .container {
   background-color: #282828;
   max-width: 100%;
-  display: block;
-  padding: 20px 600px;
+  display: flex;
+  padding: 50px 20vw;
   align-items: center;
   text-align: center;
   margin-left: auto;
@@ -470,5 +470,25 @@ h3 {
   }
   #login {
     font-size: 4vw;
+  }
+}
+#hs-card {
+  width: 30vw;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 50px 5vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 50px 5vw;
+  }
+  .highScores {
+    font-size: 6vw;
+  }
+  #hs-ol {
+    font-size: 3.2vw;
   }
 }
