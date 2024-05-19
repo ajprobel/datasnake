@@ -92,3 +92,14 @@ anime({
   duration: 7000
 });
 
+anime({
+  targets: "#endText",
+  textShadow: [{
+    duration: 1300,
+    value: "2px 2px 5px #21ef80"
+  }],
+  translateY: [300, 0],
+  duration: 1500,
+  delay: 4500
+});
+
