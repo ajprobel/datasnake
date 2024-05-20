@@ -2,6 +2,7 @@ var canvas = document.getElementById(`game`);
 var context = canvas.getContext("2d");
 var scoreEl = document.getElementById("score");
 var saveScoreBtn = document.getElementById("saveScore");
+let gameInProgress = false;
 
 // the canvas width & height, snake x & y, and the apple x & y, all need to be a multiples of the grid size in order for collision detection to work
 // (e.g. 16 * 25 = 400)
@@ -42,10 +43,16 @@ diffDrop.addEventListener("change", chooseDiff);
 // Added by Daniel - altered by James
 const startBtn = document.querySelector("#start");
 startBtn.addEventListener("click", () => {
+  // prevents multiple instances of the game being run
+  if (gameInProgress) {
+    alert("game already in progress!");
+    return;
+  }
   scoreEl.innerHTML = "";
   console.log("game started!");
   hideSaveScore();
   loop();
+  gameInProgress = true;
 });
 
 // logic for save score button
@@ -154,6 +161,7 @@ function loop() {
         // James - added code for game ending
         scoreEl.innerHTML = "Your Score: " + finalscore;
         showSaveScore();
+        gameInProgress = false;
         snake.x = 160;
         snake.y = 160;
         snake.cells = [];
