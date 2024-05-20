@@ -1,15 +1,29 @@
-# DataSnake
+# DataSnake [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
+## Deployed App Links
+--waiting for final links-- 
+- [Heroku Link]()
+- [Github Link]()
+
+### Table of Contents
+  - [Description](#description)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [How to use](#how-to-use)
+  - [Installation](#installation)
+  - [Demo](#demo)
+  - [Contributing](#contributing)
+  - [License](#license)
+
+## Description
 DataSnake is a back-end interactive web application game for users to play and enjoy. This application allows users to engage the classic snake game while having access to their own personal account to view their history of scores, viewing other's highscores or accounts by searching through a username or first and last name and seeing overall highscores by all users. The user must log in to play the game and receive a score. 
 
 ## Features
-
 - Highscores: Access highscores from all users
 - Account info: See users name, username and a history of scores
 - Search a user: Look up any user by username or first and last name and receive information regarding their highscore
 
 ## Technologies Used
-
 - JavaScript for interactivity and dynamic content loading.
 - Handlebars template engine for UI and UX
 - Express, Node.js and json packages for web application framework
@@ -17,9 +31,9 @@ DataSnake is a back-end interactive web application game for users to play and e
 - gitignore for modifying, creating and deleting untracked files 
 - Bcrypt.js for password protection and encryption
 - Prettier for formatting and reviewing content
+- AnimeJS for animation styling
 
 ## How to Use
-
 1. Create an account
 
 - Enter your first and last name into the form fields
@@ -52,21 +66,23 @@ DataSnake is a back-end interactive web application game for users to play and e
 - Click on the Account tab in the homepage to view your name, username and a history of your scores
 
 ## Installation
+To skip all the following steps, click the deployed Heroku link & begin gaming
+To run the app successfully via terminal, follow these steps:
+- Clone the git repository
+- Run the command 'npm i' or 'npm install' to install all required dependencies
+- Next, run 'npm run seed' to source the database with user information
+- Open the 'server.js' by right clicking and choosing 'open in integrated terminal'
+- Run 'npm start' in the integrated terminal
+- Lastly, go to "localhost:3001/" in your browser to view the game
+- Enjoy a fun game of Datasnake!
 
-N/A
+## Demo
+<img width="1175" alt="datasnakeLogin" src="https://github.com/ajprobel/group4-project2/assets/155387264/bf24b07c-135e-4ff1-8271-25951d4528c5">
 
-## Usage
-
-Use the deployed Heroku link below
-
-## Deployed Screenshot and Link
-
-[Deployed Link]()
-
-[![Screenshot]()]()
+[DemoVideo link](--addlinkhere--)
+ 
 
 ## Contributing
-
 Daniel Cross, Bailey Ellison, Andrew (James) Probel, Sandy Vazquez
 
 ## License
