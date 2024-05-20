@@ -4,7 +4,13 @@ const searchInput = document.querySelector("#usf-input");
 const searchHandler = async (event) => {
   event.preventDefault();
   const query = await searchInput.value.trim();
-  window.location.replace(`/userinfo/${query}`);
+  const response = await fetch(`/userinfo/${query}`);
+  if (response.ok) {
+    window.location.replace(`/userinfo/${query}`);
+  } else {
+    alert("No user found. Please try again");
+  }
+  
 };
 
 searchForm.addEventListener("submit", searchHandler);
