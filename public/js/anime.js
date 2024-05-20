@@ -37,76 +37,78 @@ anime
   })
   .add({
     targets: "#title",
-    textShadow: [{
-      duration: 1300,
-      value: "2px 2px 10px #FA3317"
-    }]
+    textShadow: [
+      {
+        duration: 1300,
+        value: "2px 2px 10px #FA3317",
+      },
+    ],
   });
 
 anime({
   targets: "#snake",
-  translateX:{
+  translateX: {
     value: [-1000, 0],
-    duration: 1000
+    duration: 1000,
   },
   rotate: {
     value: 720,
     duration: 800,
     easing: "easeInOutSine",
   },
-  scale:{
+  scale: {
     value: 1.2,
     duration: 1000,
     delay: 800,
     easing: "easeInOutQuart",
   },
-  delay: 4000
+  delay: 4000,
 });
 
 anime({
   targets: "#home-btn",
-  translateY: [150,0],
+  translateY: [150, 0],
   color: ["#5e17eb", "#ffffff"],
   easing: "easeOutExpo",
-  duration: 7000
+  duration: 7000,
 });
 anime({
   targets: "#hs-btn",
-  translateY: [150,0],
+  translateY: [150, 0],
   color: ["#5e17eb", "#ffffff"],
   easing: "easeOutExpo",
-  duration: 5000
+  duration: 5000,
 });
 anime({
   targets: "#usr-srch",
-  translateY: [150,0],
+  translateY: [150, 0],
   color: ["#5e17eb", "#ffffff"],
   easing: "easeOutExpo",
-  duration: 4000
+  duration: 4000,
 });
 anime({
   targets: "#act-btn",
-  translateY: [150,0],
+  translateY: [150, 0],
   color: ["#5e17eb", "#ffffff"],
   easing: "easeOutExpo",
-  duration: 5000
+  duration: 5000,
 });
 anime({
   targets: "#lgt-btn",
-  translateY: [150,0],
+  translateY: [150, 0],
   color: ["#5e17eb", "#ffffff"],
   easing: "easeOutExpo",
-  duration: 7000
+  duration: 7000,
 });
 
 anime({
   targets: "#endText",
+
   textShadow: [{
     duration: 1500,
     value: "2px 2px 10px #21ef80"
   }],
   translateX: [-1000, 0],
   duration: 1500,
-  delay: 4500
+  delay: 4500,
 });
-
