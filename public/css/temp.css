@@ -17,15 +17,16 @@ body {
   text-align: center;
 }
 
-h2 span{
-    font-family: Wallpoet;
-    justify-content: center;
-    display: inline-block;
+h2 span {
+  font-family: Wallpoet;
+  justify-content: center;
+  display: inline-block;
 }
 
-#title{
-    font-family: Wallpoet;
-    font-size: 45px;
+#title {
+  font-family: Wallpoet;
+  font-size: 45px;
+}
 
 #snake {
   height: 45px;
