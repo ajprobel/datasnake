@@ -191,7 +191,7 @@ h2 span{
 
 #signup-form {
   background-color: #21ef80;
-  -webkit-box-reflect: below -0.3em linear-gradient(transparent, #21ef80);
+  /* -webkit-box-reflect: below -0.3em linear-gradient(transparent, #21ef80); */
 }
 
 .form-label {
