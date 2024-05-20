@@ -6,6 +6,9 @@
 
 body {
   background-color: #282828;
+  font-family: "Electrolize", "Times New Roman", Times, serif;
+  caret-color: #fa3317;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 .header {
@@ -49,6 +52,7 @@ h2 span {
   color: #ffffff;
   font-size: 12px;
   align-items: flex-start;
+  border: 2px solid #0fac16;
 }
 
 .login:hover {
@@ -56,11 +60,6 @@ h2 span {
   border: 3px solid #5e17eb;
   color: #21ef80;
 }
-
-/* .form-label {
-    font-size: 24px;
-    background-color: #21ef80;
-} */
 
 * {
   background-color: #282828;
@@ -93,7 +92,7 @@ h2 span {
 
 #signup-form {
   background-color: #21ef80;
-  -webkit-box-reflect: below -0.3em linear-gradient(transparent, #21ef80);
+  /* -webkit-box-reflect: below -0.3em linear-gradient(transparent, #21ef80); */
 }
 
 .form-label {
@@ -156,43 +155,49 @@ h2 span {
 #home-btn:hover {
   color: #282828;
   background-color: #21ef80;
-  border: 1px solid #5e17eb;
+  border: 2px solid #5e17eb;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 #lgt-btn:hover {
   color: #282828;
   background-color: #21ef80;
-  border: 1px solid #5e17eb;
+  border: 2px solid #5e17eb;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 #act-btn:hover {
   color: #282828;
   background-color: #21ef80;
-  border: 1px solid #5e17eb;
+  border: 2px solid #5e17eb;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 #usr-srch:hover {
   color: #282828;
   background-color: #21ef80;
-  border: 1px solid #5e17eb;
+  border: 2px solid #5e17eb;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 #hs-btn:hover {
   color: #282828;
   background-color: #21ef80;
-  border: 1px solid #5e17eb;
+  border: 2px solid #5e17eb;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 .search:hover {
-  color: #282828;
-  background-color: #21ef80;
-  border: 1px solid #5e17eb;
+  color: #ffffff;
+  background-color: #0fac16;
+  border: 2px solid #5e17eb;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 .navbar-toggler-icon {
   background-color: #21ef80;
   color: #282828;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 3px;
 }
 
@@ -214,7 +219,7 @@ h2 span {
 #saveScore {
   font-weight: bold;
   font-size: 24px;
-  border: 3px solid #ffffff;
+  border: 3px solid #0fac16;
   color: #ffffff;
   border-radius: 3px;
   background-color: #5e17eb;
@@ -231,18 +236,21 @@ h2 span {
   background-color: #282828;
   border: 3px solid #5e17eb;
   color: #21ef80;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 #difficulty:hover {
   background-color: #282828;
   border: 3px solid #5e17eb;
   color: #21ef80;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 #saveScore:hover {
   background-color: #282828;
   border: 3px solid #5e17eb;
   color: #21ef80;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 h3 {
@@ -363,7 +371,7 @@ h3 {
 }
 
 .nav-link:hover {
-  cursor: pointer;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 .cr-acct {
@@ -380,6 +388,7 @@ h3 {
   background-color: #282828;
   border: 3px solid #5e17eb;
   color: #21ef80;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 /* added by Daniel for 'debug/style' */
