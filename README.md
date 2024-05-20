@@ -1,9 +1,8 @@
 # DataSnake [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 ## Deployed App Links
---waiting for final links-- 
-- [Heroku Link]()
-- [Github Link]()
+- [Heroku Link](https://group4-project2-c23a5470e6d9.herokuapp.com/)
+- [Github Link](https://github.com/ajprobel/group4-project2)
 
 ### Table of Contents
   - [Description](#description)
@@ -12,7 +11,7 @@
   - [How to use](#how-to-use)
   - [Installation](#installation)
   - [Demo](#demo)
-  - [Contributing](#contributing)
+  - [Credits](#credits)
   - [License](#license)
 
 ## Description
@@ -79,11 +78,15 @@ To run the app successfully via terminal, follow these steps:
 ## Demo
 <img width="1175" alt="datasnakeLogin" src="https://github.com/ajprobel/group4-project2/assets/155387264/bf24b07c-135e-4ff1-8271-25951d4528c5">
 
-[DemoVideo link](--addlinkhere--)
+[DemoVideo link](https://watch.screencastify.com/v/E6E6TIl84axXlhWLCa0o)
  
 
-## Contributing
+## Credits
 Daniel Cross, Bailey Ellison, Andrew (James) Probel, Sandy Vazquez
+
+Credit to Steven Lambert for an HTML version of snake that works in-browser:
+https://gist.github.com/straker/ff00b4b49669ad3dec890306d348adc4
+- we altered this code for use in our application; added difficulties, added start button, saving scores as a fetch to our api, etc.
 
 ## License
 MIT License 
