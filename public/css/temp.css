@@ -243,36 +243,12 @@ h2 span {
   color: #21ef80;
 }
 
-#usersearchCard {
-  padding: none;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#searchBkgrnd {
-  border: none;
-  background-color: #21ef80;
-}
-
 h3 {
   background-color: #21ef80;
   border: 3px solid #21ef80;
   min-width: 600px;
   text-align: center;
   margin: 0px auto;
-}
-
-#user-search-form {
-  background-color: #21ef80;
-}
-
-.lookup {
-  background-color: #21ef80;
-  font-size: 24px;
-  padding: 40px;
 }
 
 .account {
@@ -405,7 +381,7 @@ h3 {
 }
 
 /* added by Daniel for 'debug/style' */
-/* Consolidating all classes/id selectors to one section of code! (below) */
+/* Consolidating all classes/id selectors related to 'homepageloggedout.handlebars' to one section of code! (below) */
 #login-div {
   display: flex;
   flex-direction: column;
@@ -503,4 +479,76 @@ h3 {
   padding: 0px 10px;
   font-size: 32px;
   font-weight: bold;
+}
+
+/* Doing the same (below) with 'usersearch.handlebars' */
+#usersearchCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#searchBkgrnd {
+  border: none;
+  background-color: #21ef80;
+}
+
+#user-search-form {
+  background-color: #21ef80;
+  min-width: initial;
+}
+
+.lookup {
+  background-color: #21ef80;
+  font-size: 24px;
+  padding: 2vw 5vw;
+}
+
+#usf-input {
+  background-color: #5e17eb;
+  border: 3px solid #ffffff;
+  font-size: 24px;
+  color: white;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: none;
+  min-width: initial;
+}
+
+.search {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #5e17eb;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 10px;
+}
+
+#srch-hdr {
+  text-align: center;
+  min-width: initial;
+}
+
+#srch-dir {
+  font-size: 16px;
+  min-width: initial;
+}
+
+@media screen and (max-width: 550px) {
+  #user-search-form {
+    max-width: 50vw;
+  }
+  #usf-input {
+    max-width: 45vw;
+    max-height: 10vw;
+  }
+  #gameBackground {
+    padding: 3vw;
+  }
+  #game {
+    max-width: 95vw;
+  }
 }
