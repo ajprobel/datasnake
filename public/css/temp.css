@@ -552,3 +552,10 @@ h3 {
     max-width: 95vw;
   }
 }
+
+/* fixing score-display */
+#score-disp {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
