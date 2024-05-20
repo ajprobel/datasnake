@@ -1,16 +1,20 @@
 /* temp css */
 * {
-    background-color: #282828;
-    font-family: 'Electrolize', 'Times New Roman', Times, serif;
+  background-color: #282828;
+  font-family: "Electrolize", "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: #282828;
 }
 
 .header {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-size: 60px;
-    font-weight: 600;
-    color: #ffffff;
-    text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 60px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
 }
 
 h2 span{
@@ -22,133 +26,132 @@ h2 span{
 #title{
     font-family: Wallpoet;
     font-size: 45px;
-}
 
-#snake{
-    height: 45px;
-    width: 45px;
+#snake {
+  height: 45px;
+  width: 45px;
 }
 
 .logInHeader {
-    background-color: #282828;
-    border: none;
-    font-size: 24px;
-    font-weight: 600;
-    margin-top: -10px;
-    padding: 20px;
-    text-align: center;
-    color: #ffffff;
+  background-color: #282828;
+  border: none;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: -10px;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .card-background {
-    background-color: #282828;
+  background-color: #282828;
 }
 
 #userForm {
-    background-color: #21ef80;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  background-color: #21ef80;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .login-form {
-    margin: 50px;
-    padding: 60px 40px 10px 40px;
-    display: block;
-    align-items: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 25%;
-    background-color: #21ef80;
-    color: #ffffff;
-    border: 5px solid #ffffff;
-    border-radius: 3px;
+  margin: 50px;
+  padding: 60px 40px 10px 40px;
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 25%;
+  background-color: #21ef80;
+  color: #ffffff;
+  border: 5px solid #ffffff;
+  border-radius: 3px;
 }
 
 .usernameInput {
-    background-color: #21ef80;
+  background-color: #21ef80;
 }
 
 .username,
 .password {
-    background-color: #21ef80;
-    font-size: 30px;
-    color: #282828;
-    text-align: center;
-    display: block;
-    align-items: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    margin: 10px;
+  background-color: #21ef80;
+  font-size: 30px;
+  color: #282828;
+  text-align: center;
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  margin: 10px;
 }
 
 .username:focus {
-    background-color: #282828;
-    color: #ffffff;
-    border: 3px solid #5e17eb;
+  background-color: #282828;
+  color: #ffffff;
+  border: 3px solid #5e17eb;
 }
 
 .password:focus {
-    background-color: #282828;
-    color: #ffffff;
-    border: 3px solid #5e17eb;
+  background-color: #282828;
+  color: #ffffff;
+  border: 3px solid #5e17eb;
 }
 
 #username-login,
 #password-login {
-    background-color: #5e17eb;
-    border: 3px solid #ffffff;
-    font-size: 24px;
-    border-radius: 3px;
-    padding: 10px;
-    box-shadow: none;
+  background-color: #5e17eb;
+  border: 3px solid #ffffff;
+  font-size: 24px;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: none;
 }
 
 .form-label {
-    color: #ffffff;
-    font-size: 12px;
-    align-items: flex-start;
+  color: #ffffff;
+  font-size: 12px;
+  align-items: flex-start;
 }
 
 #loginButton {
-    background-color: #21ef80;
+  background-color: #21ef80;
 }
 
 .login {
-    font-weight: bold;
-    margin-top: 60px;
-    padding: 15px 40px;
-    font-size: 24px;
-    border: 3px solid #ffffff;
-    color: #ffffff;
-    border-radius: 3px;
-    background-color: #5e17eb;
-    justify-content: center;
+  font-weight: bold;
+  margin-top: 60px;
+  padding: 15px 40px;
+  font-size: 24px;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  border-radius: 3px;
+  background-color: #5e17eb;
+  justify-content: center;
 }
 
 .login:hover {
-    background-color: #282828;
-    border: 3px solid #5e17eb;
-    color: #21ef80;
+  background-color: #282828;
+  border: 3px solid #5e17eb;
+  color: #21ef80;
 }
 
 #make-acct {
-    display: block;
-    align-items: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 25%;
-    background-color: #21ef80;
-    color: #282828;
-    border: 3px solid #ffffff;
-    border-radius: 3px;
-    padding: 0px 10px;
-    font-size: 32px;
-    font-weight: bold;
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 25%;
+  background-color: #21ef80;
+  color: #282828;
+  border: 3px solid #ffffff;
+  border-radius: 3px;
+  padding: 0px 10px;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 /* .form-label {
@@ -157,52 +160,52 @@ h2 span{
 } */
 
 * {
-    background-color: #282828;
+  background-color: #282828;
 }
 
 .newAcct {
-    font-size: 24px;
-    color: #ffffff;
-    text-align: center;
-    margin-top: -10px;
-    margin-bottom: 50px;
-    background-color: #282828;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 50px;
+  background-color: #282828;
 }
 
 .card {
-    background-color: #21ef80;
-    align-items: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 60%;
-    display: block;
-    border: 5px solid #ffffff;
+  background-color: #21ef80;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
+  display: block;
+  border: 5px solid #ffffff;
 }
 
 #acctCard {
-    padding: 60px 200px;
-    background-color: #21ef80;
+  padding: 4vw 10vw;
+  background-color: #21ef80;
 }
 
 #signup-form {
-    background-color: #21ef80;
-    -webkit-box-reflect: below -0.3em linear-gradient(transparent,#21ef80);
+  background-color: #21ef80;
+  -webkit-box-reflect: below -0.3em linear-gradient(transparent, #21ef80);
 }
 
 .form-label {
-    background-color: #21ef80;
-    font-size: 36px;
-    color: #282828;
-    text-align: center;
-    display: block;
-    align-items: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: -8px;
-    padding: 20px;
-    /* max-width: 50%; */
+  background-color: #21ef80;
+  font-size: 36px;
+  color: #282828;
+  text-align: center;
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -8px;
+  padding: 20px;
+  /* max-width: 50%; */
 }
 
 #fr-nm,
@@ -210,42 +213,26 @@ h2 span{
 #usr-nm,
 #pswd,
 #usf-input {
-    background-color: #5e17eb;
-    border: 3px solid #ffffff;
-    font-size: 24px;
-    border-radius: 3px;
-    padding: 10px;
-    box-shadow: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+  background-color: #5e17eb;
+  border: 3px solid #ffffff;
+  font-size: 24px;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #createAcct {
-    background-color: #21ef80;
-    padding-top: 60px;
-}
-
-#login {
-    font-weight: bold;
-    font-size: 24px;
-    border: 3px solid #ffffff;
-    color: #ffffff;
-    border-radius: 3px;
-    background-color: #5e17eb;
-    justify-content: center;
-}
-
-#login:hover {
-    background-color: #282828;
-    border: 3px solid #5e17eb;
-    color: #21ef80;
+  background-color: #21ef80;
+  padding-top: 60px;
 }
 
 #navbar {
-    padding: 0px;
+  padding: 0px;
 }
 
 #home-btn,
@@ -254,215 +241,264 @@ h2 span{
 #act-btn,
 #lgt-btn,
 .search {
-    font-size: 16px;
-    color: #ffffff;
-    background-color: #5e17eb;
-    border: 1px solid #ffffff;
-    border-radius: 3px;
-    padding: 5px;
-    margin: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #5e17eb;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 10px;
 }
 
 #home-btn:hover {
-    color: #282828;
-    background-color: #21ef80;
-    border: 1px solid #5e17eb;
+  color: #282828;
+  background-color: #21ef80;
+  border: 1px solid #5e17eb;
 }
 
 #lgt-btn:hover {
-    color: #282828;
-    background-color: #21ef80;
-    border: 1px solid #5e17eb;
+  color: #282828;
+  background-color: #21ef80;
+  border: 1px solid #5e17eb;
 }
 
 #act-btn:hover {
-    color: #282828;
-    background-color: #21ef80;
-    border: 1px solid #5e17eb;
+  color: #282828;
+  background-color: #21ef80;
+  border: 1px solid #5e17eb;
 }
 
 #usr-srch:hover {
-    color: #282828;
-    background-color: #21ef80;
-    border: 1px solid #5e17eb;
+  color: #282828;
+  background-color: #21ef80;
+  border: 1px solid #5e17eb;
 }
 
 #hs-btn:hover {
-    color: #282828;
-    background-color: #21ef80;
-    border: 1px solid #5e17eb;
+  color: #282828;
+  background-color: #21ef80;
+  border: 1px solid #5e17eb;
 }
 
 .search:hover {
-    color: #282828;
-    background-color: #21ef80;
-    border: 1px solid #5e17eb;
+  color: #282828;
+  background-color: #21ef80;
+  border: 1px solid #5e17eb;
 }
 
 .navbar-toggler-icon {
-    background-color: #21ef80;
-    color: #282828;
-    border: 1px solid #ffffff;
-    border-radius: 3px;
+  background-color: #21ef80;
+  color: #282828;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
 }
 
 #gameBackground {
-    padding: 60px;
+  padding: 60px;
 }
 
 #game {
-    display: block;
-    align-items: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    color: #282828;
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #282828;
 }
 
 #start,
 #difficulty,
 #saveScore {
-    font-weight: bold;
-    font-size: 24px;
-    border: 3px solid #ffffff;
-    color: #ffffff;
-    border-radius: 3px;
-    background-color: #5e17eb;
-    justify-content: center;
-    display: block;
-    align-items: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
+  font-weight: bold;
+  font-size: 24px;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  border-radius: 3px;
+  background-color: #5e17eb;
+  justify-content: center;
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
 #start:hover {
-    background-color: #282828;
-    border: 3px solid #5e17eb;
-    color: #21ef80;
+  background-color: #282828;
+  border: 3px solid #5e17eb;
+  color: #21ef80;
 }
 
 #difficulty:hover {
-    background-color: #282828;
-    border: 3px solid #5e17eb;
-    color: #21ef80;
+  background-color: #282828;
+  border: 3px solid #5e17eb;
+  color: #21ef80;
 }
 
 #saveScore:hover {
-    background-color: #282828;
-    border: 3px solid #5e17eb;
-    color: #21ef80;
+  background-color: #282828;
+  border: 3px solid #5e17eb;
+  color: #21ef80;
 }
 
 #usersearchCard {
-    padding:none;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+  padding: none;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #searchBkgrnd {
-    border: none;
-    background-color: #21ef80;
+  border: none;
+  background-color: #21ef80;
 }
 
 h3 {
-    background-color: #21ef80;
-    border: 3px solid #21ef80;
-    min-width: 600px;
-    text-align: center;
-    margin: 0px auto;
+  background-color: #21ef80;
+  border: 3px solid #21ef80;
+  min-width: 600px;
+  text-align: center;
+  margin: 0px auto;
 }
 
 #user-search-form {
-   background-color: #21ef80; 
+  background-color: #21ef80;
 }
 
 .lookup {
-    background-color: #21ef80;
-    font-size: 24px;
-    padding: 40px;
+  background-color: #21ef80;
+  font-size: 24px;
+  padding: 40px;
 }
 
 .account {
-    color: #ffffff;
-    justify-content: center;
-    text-align: center;
+  color: #ffffff;
+  justify-content: center;
+  text-align: center;
 }
 
 .account h2 {
-color: #21ef80;
+  color: #21ef80;
 }
 
 .acctCard {
-    max-width: 60%;
-    background-color: #282828;
-    border: 5px solid #5e17eb;
-    box-shadow: #21ef80;
-    justify-content: block;
-    align-items: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 60%;
+  background-color: #282828;
+  border: 5px solid #5e17eb;
+  box-shadow: #21ef80;
+  justify-content: block;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
-    background-color: #282828;
-    max-width: 100%;
-    display: block;
-    padding: 20px 600px;
-    align-items: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#usr-name {
-    background-color: #282828;
-    color: #ffffff;
+  background-color: #282828;
+  max-width: 100%;
+  display: flex;
+  padding: 50px 20vw;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-body {
-    background-color: #21ef80;
-    color: #282828;
-    border: 5px solid #5e17eb;
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  background-color: #21ef80;
+  color: #282828;
+  border: 5px solid #5e17eb;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .highScores {
-    background-color: #21ef80;
+  background-color: #21ef80;
 }
 
 .hsList {
-    background-color: #21ef80;
-    padding: 10px;
-    font-size: 16px;
+  background-color: #21ef80;
+  padding: 10px;
+  font-size: 16px;
 }
 
 .hsList ol {
-    background-color: #21ef80;
+  background-color: #21ef80;
 }
 
 .hsList li {
-    background-color: #21ef80;
+  background-color: #21ef80;
 }
 
-
 .footer {
-    display: block;
-    align-items: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #282828;
-    color: #ffffff;
-    font-size: 12px;
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #282828;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+/* added by Daniel */
+#score {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+@media screen and (max-width: 600px) {
+  .form-label {
+    font-size: 5vw;
+  }
+  #login {
+    font-size: 4vw;
+  }
+}
+#hs-card {
+  width: 30vw;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 50px 5vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 50px 5vw;
+  }
+  .highScores {
+    font-size: 6vw;
+  }
+  #hs-ol {
+    font-size: 3.2vw;
+  }
+}
+
+.nav-link:hover {
+  cursor: pointer;
+}
+
+.cr-acct {
+  font-weight: bold;
+  font-size: 24px;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  border-radius: 3px;
+  background-color: #5e17eb;
+  justify-content: center;
+}
+
+.cr-acct:hover {
+  background-color: #282828;
+  border: 3px solid #5e17eb;
+  color: #21ef80;
 }

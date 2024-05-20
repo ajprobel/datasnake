@@ -1,27 +1,31 @@
 <div class="card-background">
   <h1 class="newAcct">New Account</h1>
   <div id="acctCard" class="card">
-    <form id="signup-form" class="row g-3">
+    <form id="signup-form">
       <div class="newAcctCard">
-        <div class="col-md-12 center">
+        <div>
           <label for="firstName" class="form-label">First Name</label>
-          <input type="text" class="form-control" id="fr-nm">
+          <input type="text" class="form-control" id="fr-nm" />
         </div>
-        <div class="col-md-12 center">
+        <div>
           <label for="lastName" class="form-label">Last Name</label>
-          <input type="text" class="form-control" id="ls-nm">
+          <input type="text" class="form-control" id="ls-nm" />
         </div>
-        <div class="col-md-12 center">
+        <div>
           <label for="username" class="form-label">Username</label>
-          <input type="text" class="form-control" id="usr-nm">
+          <input type="text" class="form-control" id="usr-nm" />
         </div>
-        <div class="col-md-12 center">
-          <label id="pswdLabel" for="password" class="form-label">Password</label>
-          <input type="password" class="form-control" id="pswd">
+        <div>
+          <label
+            id="pswdLabel"
+            for="password"
+            class="form-label"
+          >Password</label>
+          <input type="password" class="form-control" id="pswd" />
         </div>
-        <div id="createAcct" class="col-12 center">
-          <a href="./hompageloggedin.handlebars">
-            <button type="button" class="btn btn-primary" id="login">Create Account</button></a>
+        <div id="createAcct">
+            <button type="submit" class="cr-acct btn btn-primary ">Create
+              Account</button></a>
         </div>
       </div>
     </form>

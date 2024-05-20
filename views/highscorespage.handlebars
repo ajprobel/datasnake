@@ -1,9 +1,9 @@
 <div class="container">
-        <div class="card-body row row-cols-2">
+        <div id="hs-card" class="card-body row row-cols-2">
             <h1 class="highScores">HIGHSCORES</h1>
             <div class="hsList">
                 {{#if scores.length}}
-                <ol>
+                <ol id="hs-ol">
                     {{#each scores as |score|}}
                     {{> highscorespartial}}
                     {{/each}}
