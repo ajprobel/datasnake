@@ -15,12 +15,16 @@
   text-align: center;
 }
 
-h2 span{
-    font-family: Wallpoet;
-    justify-content: center;
-    display: inline-block;
+h2 span {
+  font-family: Wallpoet;
+  justify-content: center;
+  display: inline-block;
 }
 
+#title {
+  font-family: Wallpoet;
+  font-size: 45px;
+}
 #title{
     font-family: Wallpoet;
     font-size: 45px;
@@ -99,36 +103,10 @@ h2 span{
   border: 3px solid #5e17eb;
 }
 
-#username-login,
-#password-login {
-  background-color: #5e17eb;
-  border: 3px solid #ffffff;
-  font-size: 24px;
-  border-radius: 3px;
-  padding: 10px;
-  box-shadow: none;
-}
-
 .form-label {
   color: #ffffff;
   font-size: 12px;
   align-items: flex-start;
-}
-
-#loginButton {
-  background-color: #21ef80;
-}
-
-.login {
-  font-weight: bold;
-  margin-top: 60px;
-  padding: 15px 40px;
-  font-size: 24px;
-  border: 3px solid #ffffff;
-  color: #ffffff;
-  border-radius: 3px;
-  background-color: #5e17eb;
-  justify-content: center;
 }
 
 .login:hover {
@@ -375,16 +353,6 @@ h3 {
   margin: 0px auto;
 }
 
-#user-search-form {
-  background-color: #21ef80;
-}
-
-.lookup {
-  background-color: #21ef80;
-  font-size: 24px;
-  padding: 40px;
-}
-
 .account {
   color: #ffffff;
   justify-content: center;
@@ -513,4 +481,364 @@ h3 {
   border: 3px solid #5e17eb;
   color: #21ef80;
   cursor: url("/assets/apple.png"), auto;
+}
+
+/* added by Daniel for 'debug/style' */
+/* Consolidating all classes/id selectors related to 'homepageloggedout.handlebars' to one section of code! (below) */
+#login-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-header {
+  min-width: initial;
+}
+
+.login-form {
+  margin: 30px 10vw;
+  padding: 3vw 5vw;
+  align-items: center;
+  text-align: center;
+  background-color: #21ef80;
+  color: #ffffff;
+  border: 5px solid #ffffff;
+  border-radius: 3px;
+}
+
+.logInHeader {
+  background-color: #282828;
+  border: none;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: -10px;
+  padding: 2vw;
+  text-align: center;
+  color: #ffffff;
+}
+
+.usernameInput {
+  background-color: #21ef80;
+}
+
+#userForm {
+  background-color: #21ef80;
+}
+
+#username-login,
+#password-login {
+  background-color: #5e17eb;
+  border: 3px solid #ffffff;
+  font-size: 24px;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: none;
+}
+
+#loginButton {
+  background-color: #21ef80;
+}
+
+.login {
+  font-weight: bold;
+  margin-top: 60px;
+  padding: 15px 40px;
+  font-size: 24px;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  border-radius: 3px;
+  background-color: #5e17eb;
+  justify-content: center;
+}
+
+.username,
+.password {
+  background-color: #21ef80;
+  font-size: 30px;
+  color: #282828;
+  text-align: center;
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  margin: 10px;
+}
+
+.card-background {
+  background-color: #282828;
+}
+
+#make-acct {
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #21ef80;
+  color: #282828;
+  border: 3px solid #ffffff;
+  border-radius: 3px;
+  padding: 0px 10px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Doing the same (below) with 'usersearch.handlebars' */
+#usersearchCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#searchBkgrnd {
+  border: none;
+  background-color: #21ef80;
+}
+
+#user-search-form {
+  background-color: #21ef80;
+  min-width: initial;
+}
+
+.lookup {
+  background-color: #21ef80;
+  font-size: 24px;
+  padding: 2vw 5vw;
+}
+
+#usf-input {
+  background-color: #5e17eb;
+  border: 3px solid #ffffff;
+  font-size: 24px;
+  color: white;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: none;
+  min-width: initial;
+}
+
+.search {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #5e17eb;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 10px;
+}
+
+#srch-hdr {
+  text-align: center;
+  min-width: initial;
+}
+
+#srch-dir {
+  font-size: 16px;
+  min-width: initial;
+}
+
+@media screen and (max-width: 550px) {
+  #user-search-form {
+    max-width: 50vw;
+  }
+  #usf-input {
+    max-width: 45vw;
+    max-height: 10vw;
+  }
+  #gameBackground {
+    padding: 3vw;
+  }
+  #game {
+    max-width: 95vw;
+  }
+}
+
+/* fixing score-display */
+#score-disp {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+/* added by Daniel for 'debug/style' */
+/* Consolidating all classes/id selectors related to 'homepageloggedout.handlebars' to one section of code! (below) */
+#login-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-header {
+  min-width: initial;
+}
+
+.login-form {
+  margin: 30px 10vw;
+  padding: 3vw 5vw;
+  align-items: center;
+  text-align: center;
+  background-color: #21ef80;
+  color: #ffffff;
+  border: 5px solid #ffffff;
+  border-radius: 3px;
+}
+
+.logInHeader {
+  background-color: #282828;
+  border: none;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: -10px;
+  padding: 2vw;
+  text-align: center;
+  color: #ffffff;
+}
+
+.usernameInput {
+  background-color: #21ef80;
+}
+
+#userForm {
+  background-color: #21ef80;
+}
+
+#username-login,
+#password-login {
+  background-color: #5e17eb;
+  border: 3px solid #ffffff;
+  font-size: 24px;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: none;
+}
+
+#loginButton {
+  background-color: #21ef80;
+}
+
+.login {
+  font-weight: bold;
+  margin-top: 60px;
+  padding: 15px 40px;
+  font-size: 24px;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  border-radius: 3px;
+  background-color: #5e17eb;
+  justify-content: center;
+}
+
+.username,
+.password {
+  background-color: #21ef80;
+  font-size: 30px;
+  color: #282828;
+  text-align: center;
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  margin: 10px;
+}
+
+.card-background {
+  background-color: #282828;
+}
+
+#make-acct {
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #21ef80;
+  color: #282828;
+  border: 3px solid #ffffff;
+  border-radius: 3px;
+  padding: 0px 10px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Doing the same (below) with 'usersearch.handlebars' */
+#usersearchCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#searchBkgrnd {
+  border: none;
+  background-color: #21ef80;
+}
+
+#user-search-form {
+  background-color: #21ef80;
+  min-width: initial;
+}
+
+.lookup {
+  background-color: #21ef80;
+  font-size: 24px;
+  padding: 2vw 5vw;
+}
+
+#usf-input {
+  background-color: #5e17eb;
+  border: 3px solid #ffffff;
+  font-size: 24px;
+  color: white;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: none;
+  min-width: initial;
+}
+
+.search {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #5e17eb;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 10px;
+}
+
+#srch-hdr {
+  text-align: center;
+  min-width: initial;
+}
+
+#srch-dir {
+  font-size: 16px;
+  min-width: initial;
+}
+
+@media screen and (max-width: 550px) {
+  #user-search-form {
+    max-width: 50vw;
+  }
+  #usf-input {
+    max-width: 45vw;
+    max-height: 10vw;
+  }
+  #gameBackground {
+    padding: 3vw;
+  }
+  #game {
+    max-width: 95vw;
+  }
+}
+
+/* fixing score-display */
+#score-disp {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
 }
