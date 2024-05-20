@@ -2,12 +2,8 @@
 * {
   background-color: #282828;
   font-family: "Electrolize", "Times New Roman", Times, serif; 
-}
-
-body {
-  background-color: #282828;
-    caret-color: #FA3317;
-    cursor: url("/assets/apple.png"), auto;
+  caret-color: #FA3317;
+  cursor: url("/assets/apple.png"), auto; 
 }
 
 .header {
@@ -68,7 +64,7 @@ h2 span{
   max-width: 25%;
   background-color: #21ef80;
   color: #ffffff;
-  border: 5px solid #ffffff;
+  border: 5px solid #0FAC16;
   border-radius: 3px;
 }
 
@@ -139,6 +135,7 @@ h2 span{
   background-color: #282828;
   border: 3px solid #5e17eb;
   color: #21ef80;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 #make-acct {
@@ -150,7 +147,7 @@ h2 span{
   max-width: 25%;
   background-color: #21ef80;
   color: #282828;
-  border: 3px solid #ffffff;
+  border: 3px solid #5e17eb;
   border-radius: 3px;
   padding: 0px 10px;
   font-size: 32px;
@@ -189,6 +186,7 @@ h2 span{
 #acctCard {
   padding: 4vw 10vw;
   background-color: #21ef80;
+  border: 5px solid #0FAC16;
 }
 
 #signup-form {
@@ -247,7 +245,7 @@ h2 span{
   font-size: 16px;
   color: #ffffff;
   background-color: #5e17eb;
-  border: 1px solid #ffffff;
+  border: 2px solid #0FAC16;
   border-radius: 3px;
   padding: 5px;
   margin: 10px;
@@ -256,43 +254,49 @@ h2 span{
 #home-btn:hover {
   color: #282828;
   background-color: #21ef80;
-  border: 1px solid #5e17eb;
+  border: 2px solid #5e17eb;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 #lgt-btn:hover {
   color: #282828;
   background-color: #21ef80;
-  border: 1px solid #5e17eb;
+  border: 2px solid #5e17eb;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 #act-btn:hover {
   color: #282828;
   background-color: #21ef80;
-  border: 1px solid #5e17eb;
+  border: 2px solid #5e17eb;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 #usr-srch:hover {
   color: #282828;
   background-color: #21ef80;
-  border: 1px solid #5e17eb;
+  border: 2px solid #5e17eb;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 #hs-btn:hover {
   color: #282828;
   background-color: #21ef80;
-  border: 1px solid #5e17eb;
+  border: 2px solid #5e17eb;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 .search:hover {
-  color: #282828;
-  background-color: #21ef80;
-  border: 1px solid #5e17eb;
+  color: #ffffff;
+  background-color: #0FAC16;
+  border: 2px solid #5e17eb;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 .navbar-toggler-icon {
   background-color: #21ef80;
   color: #282828;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 3px;
 }
 
@@ -314,7 +318,7 @@ h2 span{
 #saveScore {
   font-weight: bold;
   font-size: 24px;
-  border: 3px solid #ffffff;
+  border: 3px solid #0FAC16;
   color: #ffffff;
   border-radius: 3px;
   background-color: #5e17eb;
@@ -331,18 +335,21 @@ h2 span{
   background-color: #282828;
   border: 3px solid #5e17eb;
   color: #21ef80;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 #difficulty:hover {
   background-color: #282828;
   border: 3px solid #5e17eb;
   color: #21ef80;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 #saveScore:hover {
   background-color: #282828;
   border: 3px solid #5e17eb;
   color: #21ef80;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 #usersearchCard {
@@ -352,6 +359,7 @@ h2 span{
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  border: 5px solid #0FAC16;
 }
 
 #searchBkgrnd {
@@ -487,7 +495,7 @@ h3 {
 }
 
 .nav-link:hover {
-  cursor: pointer;
+  cursor: url("/assets/apple.png"), auto;
 }
 
 .cr-acct {
@@ -504,4 +512,5 @@ h3 {
   background-color: #282828;
   border: 3px solid #5e17eb;
   color: #21ef80;
+  cursor: url("/assets/apple.png"), auto;
 }
