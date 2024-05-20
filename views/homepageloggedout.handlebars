@@ -1,21 +1,19 @@
-<div class="card-background">
-  <h3 class="logInHeader">LOG IN TO PLAY</h3>
+<div class="card-background" id="login-div">
+  <h3 class="logInHeader" id="login-header">LOG IN TO PLAY</h3>
 
   <form class="login-form">
+    <div class="usernameInput">
+      <label class="username" for="username">Username:</label>
+      <input id="username-login" type="text" />
+    </div>
     <div id="userForm" class="">
-      <div class="usernameInput">
-        <label class="username" for="username">Username:</label>
-        <input id="username-login" type="text">
-      </div>
-      <div id="userForm" class="">
-        <label class="password" for="password">Password:</label>
-        <input id="password-login" type="password">
-      </div>
-      <div id="loginButton" class="">
-        <button class="login" type="submit">Log In</button></a>
-      </div>
+      <label class="password" for="password">Password:</label>
+      <input id="password-login" type="password" />
+    </div>
+    <div id="loginButton" class="">
+      <button class="login" type="submit">Log In</button>
     </div>
   </form>
-  <button id="make-acct" class="" type="button">Make an Account</button></a>
+  <button id="make-acct" class="" type="button">Make an Account</button>
 </div>
 <script src="/js/login.js"></script>
