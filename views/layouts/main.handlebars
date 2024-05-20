@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+
     <title>Data Snake</title>
 </head>
 
@@ -43,8 +45,7 @@
     <div class="header">
         <h2 id="title">DATASNAKE </h2>
           <img id="snake" src="/assets/datasnake.jpg">
-        <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
-        <script src="/js/anime.js"></script>
+        
     </div>
     {{{body}}}
     <div class="content">
@@ -52,7 +53,9 @@
     </div> --}}
 
     <div class="footer">
-        <h6>Made with love by Group 4</h6>
+        <h6 id="endText">Made with &#128154; by Group 4</h6>
+        <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+        <script src="/js/anime.js"></script>
     </div>
     {{#if logged_in}}
     <script src="/js/navbar.js"></script>

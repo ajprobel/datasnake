@@ -22,16 +22,18 @@ const { Score } = require("../../models");
 
 router.post("/newScore", async (req, res) => {
   try {
-    const userId = req.session.user_id
-    newScoreData = {
+    const userId = req.session.user_id;
+    console.log(userId);
+    const newScoreData = {
       user_id: userId,
-      score: req.body.newScore
-    }
+      score: req.body.newScore,
+    };
+    console.log(newScoreData);
     const newScore = await Score.create(newScoreData);
     res.status(200).json(newScore);
   } catch (err) {
     res.status(400).json(err);
   }
-})
+});
 
 module.exports = router;
