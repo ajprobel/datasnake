@@ -1,7 +1,9 @@
 /* temp css */
 * {
     background-color: #282828;
-    font-family: 'Electrolize', 'Times New Roman', Times, serif;
+    font-family: 'Electrolize', 'Times New Roman', Times, serif; 
+    caret-color: #FA3317;
+    cursor: url("/assets/apple.png"), auto;
 }
 
 .header {
