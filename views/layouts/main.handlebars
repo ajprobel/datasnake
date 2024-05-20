@@ -16,56 +16,19 @@
 
 <body>
     {{#if logged_in}}
-    {{!-- <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand nav-link" id="home-btn">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" id="hs-btn">High Scores</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="usr-srch">User Search</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="act-btn">My Account</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="lgt-btn">Logout</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> --}}
-    <nav class="navbar navbar-expand-md bg-body-tertiary" id="navbar">
+    <nav class="navbar navbar-expand-sm bg-body-tertiary" id="navbar">
         <div class="container-fluid">
             {{!-- <a class="navbar-brand nav-link navbar-toggler" id="home-btn">Home</a> --}}
-            <button type="button" data-bs-toggle=""="collapse" data-bs-target="#navbarNav" class="navbar-toggler"  
+             <a href="#" class="nav-link active" id="home-btn">Home</a>
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" id='nav-toggler' class="navbar-toggler"  
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active"></li>
-                        <a href="#" class="nav-link active" id="home-btn">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active" id="hs-btn">High Scores</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active" id="usr-srch">User Search</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active" id="act-btn">My Account</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active" id="lgt-btn">Logout</a>
-                    </li>
-                </ul>
+            <div class="collapse navbar-collapse" style="display: 'none'" id="navbarNav">
+                <a href="#" class="nav-link active nav-col" id="hs-btn">High Scores</a>
+                <a href="#" class="nav-link active nav-col" id="usr-srch">User Search</a>
+                <a href="#" class="nav-link active nav-col" id="act-btn">My Account</a>
+                <a href="#" class="nav-link active nav-col" id="lgt-btn">Logout</a>
             </div>
         </div>
     </nav>

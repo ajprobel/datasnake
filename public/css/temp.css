@@ -589,3 +589,17 @@ h3 {
   cursor: pointer;
   color: white;
 }
+
+/* adding style for navbar collapse */
+#nav-col-list {
+  display: flex;
+}
+
+@media screen and (max-width: 475px) {
+  #hs-btn,
+  #usr-srch,
+  #act-btn,
+  #lgt-btn {
+    font-size: 3vw;
+  }
+}
